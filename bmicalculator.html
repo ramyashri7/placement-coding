@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Console Output Example</title>
+    <style>lable{
+    color:darkblue;
+    font-size:45px;
+    }
+    body{background-color:beige;
+      text-align:center;
+    }
+    h1{ background-color:darkblue;
+    font-style:arial;
+    color:lightpink;
+    font-size:65px;
+    }
+    input{
+      padding:10px;
+      width:200px;
+      margin: 16px;
+      border-box:12px;
+      box-shadow:1px;
+    }
+    button{ padding:10px;
+      width:default;
+      margin: 16px;
+      border-box:12px;
+      box-shadow:1px;
+      background-color:pink;
+      color:black;
+      font-family:Sans-Serif;
+      font-size:35px;
+    }
+    h2{ font-family:Sans-Serif;
+      font-size:35px;}
+    </style>
+</head>
+<body>
+    <h1>BMI calculator</h1>
+
+    <lable>weight:</lable>
+    <input id="rs" /><br>
+    <lable>height:</lable>
+    <input id="r" /><br>
+    <button onclick=add()>calculate</button>
+    <h2 id="s"></h2>
+
+
+    <script>function add() {
+      let g=parseInt(document.getElementById("rs").value);
+      let f=parseFloat(document.getElementById("r").value);
+      let d=g/(f*f);
+        // Use console.log() to display messages in the browser's console
+       document.getElementById("s").textContent="your bmi is "+d;}
+    </script>
+
+</body>
+</html>
